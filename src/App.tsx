@@ -1,33 +1,41 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import vitestLogo from '/vitest.svg'
 import './App.css'
+import { fetchQuote, Quote } from './quote.service'
 
 function App() {
   const [count, setCount] = useState(0)
 
+
+  const [quote, setQuote] = useState<Quote>();
+  useEffect(() => {
+    const getQuote = async () => {
+      const quote = await fetchQuote();
+      setQuote(quote);
+    };
+    getQuote();
+  }, []);
+  
+
   return (
     <>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
+        <a href="https://vitest.dev/" target="_blank">
+          <img src={vitestLogo} className="logo" alt="Vitest logo" />
         </a>
         <a href="https://react.dev" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
+      <h1>Vitest + React 🤝</h1>
+      <section>
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+        <h2>Quote of the Day</h2>
+        <p>{quote ? quote.quote : 'Loading...'}</p>
+      </section>
     </>
   )
 }

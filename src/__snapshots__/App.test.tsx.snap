@@ -1,0 +1,85 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`App > matches snapshot 1`] = `
+<div>
+  <div>
+    <a
+      href="https://vitest.dev/"
+      target="_blank"
+    >
+      <img
+        alt="Vitest logo"
+        class="logo"
+        src="/vitest.svg"
+      />
+    </a>
+    <a
+      href="https://react.dev"
+      target="_blank"
+    >
+      <img
+        alt="React logo"
+        class="logo react"
+        src="/src/assets/react.svg"
+      />
+    </a>
+  </div>
+  <h1>
+    Vitest + React 🤝
+  </h1>
+  <section>
+    <button>
+      count is 
+      0
+    </button>
+    <h2>
+      Quote of the Day
+    </h2>
+    <p>
+      Loading...
+    </p>
+  </section>
+</div>
+`;
+
+exports[`App > matches snapshot 2`] = `
+<div>
+  <div>
+    <a
+      href="https://vitest.dev/"
+      target="_blank"
+    >
+      <img
+        alt="Vitest logo"
+        class="logo"
+        src="/vitest.svg"
+      />
+    </a>
+    <a
+      href="https://react.dev"
+      target="_blank"
+    >
+      <img
+        alt="React logo"
+        class="logo react"
+        src="/src/assets/react.svg"
+      />
+    </a>
+  </div>
+  <h1>
+    Vitest + React 🤝
+  </h1>
+  <section>
+    <button>
+      count is 
+      1
+    </button>
+    <h2>
+      Quote of the Day
+    </h2>
+    <p>
+      Loading...
+    </p>
+  </section>
+</div>
+`;

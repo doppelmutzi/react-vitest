@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "vitest.explorer",
+    "deinsoftware.vitest-snippets",
+    "vscode-icons-team.vscode-icons",
+    "yoavbls.pretty-ts-errors"
+  ]
+}
