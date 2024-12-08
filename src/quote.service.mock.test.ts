@@ -1,6 +1,5 @@
 import { describe, it, expect, vi } from "vitest";
-import { fetchQuote } from "./quote.service";
-import type { Quote } from "./types/quote";
+import { fetchQuote, Quote } from "./quote.service";
 
 /**
  * Tests for the fetchQuote function.
