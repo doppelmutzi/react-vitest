@@ -1,12 +1,11 @@
-import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import vitestLogo from '/vitest.svg'
-import './App.css'
-import { fetchQuote, Quote } from './quote.service'
+import { useEffect, useState } from "react";
+import reactLogo from "./assets/react.svg";
+import vitestLogo from "/vitest.svg";
+import "./App.css";
+import { fetchQuote, Quote } from "./quote.service";
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const [count, setCount] = useState(0);
 
   const [quote, setQuote] = useState<Quote>();
   useEffect(() => {
@@ -16,7 +15,6 @@ function App() {
     };
     getQuote();
   }, []);
-  
 
   return (
     <>
@@ -34,10 +32,10 @@ function App() {
           count is {count}
         </button>
         <h2>Quote of the Day</h2>
-        <p>{quote ? quote.quote : 'Loading...'}</p>
+        <p data-testid="quote">{quote ? quote.quote : "Loading..."}</p>
       </section>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

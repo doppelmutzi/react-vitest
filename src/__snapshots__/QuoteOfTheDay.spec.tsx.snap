@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`App > matches snapshot 1`] = `
+exports[`renders quote after fetching 1`] = `
 <div>
   <div>
     <a
@@ -44,7 +44,7 @@ exports[`App > matches snapshot 1`] = `
 </div>
 `;
 
-exports[`App > matches snapshot 2`] = `
+exports[`renders quote after fetching 2`] = `
 <div>
   <div>
     <a
@@ -82,7 +82,7 @@ exports[`App > matches snapshot 2`] = `
     <p
       data-testid="quote"
     >
-      Loading...
+      This is a test quote
     </p>
   </section>
 </div>
